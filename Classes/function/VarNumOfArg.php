@@ -17,7 +17,18 @@
     return $n;
     }
     $a = sumMyNumbers(4,5,7,9,11,14,15,32);
-    echo $a;
+    echo "Sum= $a <br>";
+
+    function SumvarNumArg(...$y){
+        $n =0;
+        $len=count($y);
+        for($i=0;$i<$len;$i++){
+            $n+=$y[$i];
+        }
+        return $n;
+    }
+    $a = SumvarNumArg(1,4,5,7,11);
+    echo "sum= $a";
     ?>
 </body>
 </html>
