@@ -49,3 +49,27 @@ echo '<br>';
 
 $boolea = true;
 var_dump($boolea);
+
+$name ="SHONON";
+echo var_dump($name);
+
+$numFloat = 10.10;
+echo var_dump($numFloat);
+
+
+echo 'NEW ONE.<br>';
+//Array 
+// $arr = ["anil", "sabbir","shonon"];
+// echo implode(",",$arr).'<br>';
+// print_r($arr);
+
+$arr = ["anil", "sabbir",100];
+echo var_dump($arr);
+
+//$user = new className(); it's an object
+
+//resource database connection
+$connection = ftp_connect("127.0.0.1") or die("local host not found");
+echo var_dump($connection);
+?>
+
